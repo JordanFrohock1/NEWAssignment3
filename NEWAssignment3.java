@@ -22,7 +22,12 @@ public class NEWAssignment3 {
             double result = number1 * number2;
             System.out.println("The result of the multiplication is: " + result);
         } else if (operation.equalsIgnoreCase("division")) {
-           
+            if (number2 != 0) {
+                double result = (double) number1 / number2;
+                System.out.println("The result of the division is: " + result);
+            } else {
+                System.out.println("Error: Division by zero is not allowed.");
+            }
            
         } else {
             System.out.println("Invalid operation. Please enter either 'addition', 'subtraction', 'multiplication', or 'division'.");
