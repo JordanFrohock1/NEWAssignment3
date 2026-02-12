@@ -9,5 +9,8 @@ public class NEWAssignment3 {
         double number1 = input.nextInt(); 
         System.out.println("Enter in the second number: "); 
         double number2 = input.nextInt();
+
+        System.out.println("Would you like to use addition or subtraction?");
+        String operation = input.next();
     }
 }
